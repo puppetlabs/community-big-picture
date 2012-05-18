@@ -224,7 +224,7 @@ Development: Engaging with projects from Puppet Labs at a code level
 
 <!SLIDE smaller>
 # June
-* Pilot Puppet Community Podcast
+* Pilot Puppet community podcast
 * Prototype the Q&A Site internally
 * Revisit redmine vs github issues
 * Prioritize community feedback based on ticket voting
