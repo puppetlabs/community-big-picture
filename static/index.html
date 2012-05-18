@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title></title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/theme.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content center" ref="./slides/1">
+<p><img src="./file/./data/community.png" title="Community" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/2">
+<h1>Who is our community?</h1>
+
+<ul>
+<li><p>Users and customers of our products (FOSS/PE)</p></li>
+<li><p>Partners, Investors (Cisco, VMware, Google, EMC, Morphlabs, etc)</p></li>
+<li><p>Employees of Puppet Labs</p></li>
+<li><p>Primarily system administrators, but not always</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/3">
+<p><img src="./file/./data/mine2.jpg" title="Community Stick Figures" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/4">
+<h1>Why have a community?</h1>
+
+<ul>
+<li><p>Eliminate Infrastructure Problems</p></li>
+<li><p>Allow system administrators to work on interesting problems rather than the mundane</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/5">
+<h1>Measuring Community</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/6">
+<p><img src="./file/./data/mine1.jpg" title="Graphs" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/7">
+<p>Awareness: Finding the community and visiting to learn more</p>
+
+<p>(potential community members)</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/8">
+<p>Membership: Taking time to join the community</p>
+
+<p>(passive and active community members)</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/9">
+<p>Engagement: Interacting with other community members</p>
+
+<p>(active community members)</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/10">
+<p>Development: Engaging with projects from Puppet Labs at a code level</p>
+
+<p>(developers)</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/11">
+<p><img src="./file/./data/irc.puppet.users.png" title="IRC users in #puppet" alt="IRC users in #puppet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/12">
+<p><img src="./file/./data/irc.puppet.users-markup.jpg" title="IRC users in #puppet" alt="IRC users in #puppet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/13">
+<p><img src="./file/./data/mine3.jpg" title="IRC Help" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/14">
+<p><img src="./file/./data/forge.users.total.png" title="Number of users on the forge" alt="Number of users on the forge"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/15">
+<p><img src="./file/./data/redmine.users.png" title="Number of accounts in Redmine" alt="Number of accounts in Redmine"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/16">
+<p><img src="./file/./data/facebook.likes.png" title="Number of likes on facebook" alt="Number of likes on facebook"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/17">
+<p><img src="./file/./data/facebook.likes-markup.png" title="Number of likes on facebook" alt="Number of likes on facebook"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/18">
+<p><img src="./file/./data/twitter.followers_count.png" title="Followers on Twitter" alt="Followers on Twitter"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/19">
+<p><img src="./file/./data/twitter.followers_count-markup.png" title="Followers on Twitter" alt="Followers on Twitter"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/20">
+<p><img src="./file/./data/github.puppet.forks.png" title="Number of forks of Puppet" alt="Number of forks of Puppet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/21">
+<p><img src="./file/./data/github.puppet.forks-markup.png" title="Number of forks of Puppet" alt="Number of forks of Puppet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/22">
+<p><img src="./file/./data/github.puppet.pull-requests.open.png" title="Open pull requests on Puppet" alt="Open pull requests on Puppet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/23">
+<p><img src="./file/./data/github.puppet.pull-requests.open-markup.png" title="Open pull requests on Puppet" alt="Open pull requests on Puppet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/24">
+<p><img src="./file/./data/forge.modules.total.png" title="Number of modules on the forge" alt="Number of modules on the forge"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/25">
+<p><img src="./file/./data/forge.modules.total-markup.png" title="Number of modules on the forge" alt="Number of modules on the forge"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/26">
+<p><img src="./file/./data/redmine.puppet.issues.open.png" title="Puppet issue open" alt="Puppet issue open"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/27">
+<p><img src="./file/./data/redmine.puppet.issues.open-markup.png" title="Puppet issue open" alt="Puppet issue open"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/28">
+<p><img src="./file/./data/github.puppet.watchers.png" title="Watchers of Puppet" alt="Watchers of Puppet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/29">
+<p><img src="./file/./data/github.puppet.watchers-markup.png" title="Watchers of Puppet" alt="Watchers of Puppet"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/30">
+<p><img src="./file/./data/redmine.dashboard.issues.open.png" title="Dashboard issue open" alt="Dashboard issue open"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/31">
+<p><img src="./file/./data/redmine.dashboard.issues.open-markup.png" title="Dashboard issue open" alt="Dashboard issue open"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/32">
+<p><img src="./file/./data/groups.puppet-users.messages.png" title="Messages on puppet-users" alt="Messages on puppet-users"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/33">
+<p><img src="./file/./data/mine4.jpg" title="Mailing List" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/34">
+<p><img src="./file/./data/groups.puppet-dev.messages.png" title="Messages on puppet-dev" alt="Messages on puppet-dev"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/35">
+<h1>Aligning our Community</h1>
+
+<ul>
+<li><p>A strong community is built on transparency</p></li>
+<li><p>Community enables customer delight</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/36">
+<h1>Established Community Practices</h1>
+
+<ul>
+<li>User Groups</li>
+<li>Mailing Lists</li>
+<li>IRC</li>
+<li>Puppet Camps</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/37">
+<h1>Past Community Experiments</h1>
+
+<ul>
+<li>Triage-a-thon</li>
+<li>Twitter Chat</li>
+<li>Module Hackathon</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/38">
+<p><img src="./file/./data/mine6.jpg" title="Triag-a-thon" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="./slides/39">
+<h1>Past Community Wins</h1>
+
+<ul>
+<li>Native package repos (yum, apt)</li>
+<li>RC package repos</li>
+<li>Openstack Work</li>
+<li>PuppetCamp explosion</li>
+<li>May 2012 is our biggest open source month ever</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/40">
+<p><img src="./file/./data/mine5.jpg" title="PC Aussie" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/41">
+<h1>Focus Areas</h1>
+
+<h2>Reduce entry friction to be involved in the Puppet Community (membership, development)</h2></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/42">
+<p><img src="./file/./data/mine7.jpg" title="Rampinate" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/43">
+<ul>
+<li>Revamp of the community website</li>
+<li>Ensure multiple types of contributors can exist (not just coders)</li>
+<li>Enhance recognition</li>
+<li>Q&amp;A Site</li>
+<li>Direct interaction with developers</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/44">
+<h1>Focus Areas</h1>
+
+<h2>Share the development of our open source projects (development)</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/45">
+<ul>
+<li>Smooth over contribution processes</li>
+<li>Showcase contributors doing great things</li>
+<li>Get community contributors to maintain Puppet Labs modules on the forge</li>
+<li>Showcase Module of the week posts from the community</li>
+<li>Ensure community feedback in roadmap for Waldorf</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/46">
+<h1>Focus Areas</h1>
+
+<h2>Build a non-development community (engagement, membership)</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/47">
+<ul>
+<li>Create an advocate/ambassador process</li>
+<li>Enhance ability to contribute to docs</li>
+<li>Build a community website with user-generated content</li>
+<li>Allow community participation in design</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/48">
+<h1>Focus Areas</h1>
+
+<h2>Feature the community as a differentiator (awareness, engagement)</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/49">
+<ul>
+<li>Videos of design, coding, conversations</li>
+<li>Puppet campaigns with community around "I love Puppet"</li>
+<li>Possible campaigns of "Craziest use of Puppet" or "Puppet Abuse"</li>
+<li>Showcase infrastructure knowledge of the community</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/50">
+<h1>Next 60 Days</h1></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="./slides/51">
+<h1>May</h1>
+
+<ul>
+<li>Utilize the community pages until .org is launched</li>
+<li>Publicize contributor roles document</li>
+<li>Review need for CLA on all types of projects</li>
+<li>Begin working with platform team on onboarding process</li>
+<li>Experiment with office hours for developers</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="./slides/52">
+<h1>June</h1>
+
+<ul>
+<li>Pilot Puppet community podcast</li>
+<li>Prototype the Q&amp;A Site internally</li>
+<li>Revisit redmine vs github issues</li>
+<li>Prioritize community feedback based on ticket voting</li>
+<li>Conduct online module seminar (video, or class)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="./slides/53">
+<h1>June</h1>
+
+<ul>
+<li>Host module hack event</li>
+<li>Review contribution recognition strategies</li>
+<li>Launch pairing with a developer activities</li>
+<li>Work on onboarding/recruiting platform owners and community QA people</li>
+<li>Showcase Puppet roadmap for open source projects</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/54">
+<p><img src="./file/./data/mine9.jpg" title="PuppetConf fu" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="./slides/55">
+<h1>PuppetConf</h1>
+
+<ul>
+<li>Community Focus in one room</li>
+<li>Hackathon events</li>
+<li>OpenSpaces</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="./slides/56">
+<h1>Long Term Ideas</h1>
+
+<ul>
+<li>Create Puppet community profiles platform</li>
+<li>Provide an @puppetproject.org email address for contributors</li>
+<li>Create merit badges</li>
+<li>Figure out single sign-on</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/57">
+<p><img src="./file/./data/mine8.jpg" title="Word Cloud" alt="Community"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/58">
+<h1>Convergence</h1>
+
+<ul>
+<li>Collaboration platform for the community</li>
+<li>Integrate all avenues of user-generated content</li>
+<li>Combine with recognition</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="./slides/59">
+<h1>Call to action</h1>
+
+<ul>
+<li>Help with IRC, lists, github, redmine, twitter</li>
+<li>Collaborate and educate</li>
+<li>Blog/Video/Design content</li>
+<li>Recognition ideas</li>
+<li>Wear a tattoo</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="./slides/60">
+<p><img src="./file/./data/mine2.jpg" title="Community Stick Figures" alt="Community"/></p></div>
+</div></div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+.content::before {
+  font-family: 'Lucida Grande';
+  font-weight: bold;
+  content : url(images/logo_lg.png);
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+  z-index: -1;
+}
